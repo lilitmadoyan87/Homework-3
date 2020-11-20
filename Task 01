@@ -3,7 +3,7 @@ function replaceMissingWord(sentence, arr) {
   for(let i = 0; i < sentence.length; i++) {
     if(sentence[i] === '_') {
       for(let j = 0; j < arr.length; j++) {
-        return newSentence += arr[i].toString()
+        return newSentence += arr[j].toString()
       } 
     } else{
         return newSentence += sentence[i]
