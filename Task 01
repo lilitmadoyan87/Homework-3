@@ -1,0 +1,16 @@
+function replaceMissingWord(sentence, arr) {
+  let newSentence = ``;
+  for(let i = 0; i < sentence.length; i++) {
+    if(sentence[i] === '_') {
+      for(let j = 0; j < arr.length; j++) {
+        return newSentence += arr[i].toString()
+      } 
+    } else{
+        return newSentence += sentence[i]
+  }
+  //return newSentence;
+}
+
+let sentence = 'hello'
+let arr = [1, 'free', 'hura'];
+console.log(replaceMissingWord(sentence, arr));
