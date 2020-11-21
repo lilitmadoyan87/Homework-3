@@ -1,0 +1,15 @@
+function sumOfMaxAndMinLengths(arr) {
+ let maxLength = 0;
+ let minLength = 10000;
+ for(let i = 0; i < arr.length; i++) {
+   if(arr[i].length > maxLength) {
+     maxLength = arr[i].length
+   } else if(arr[i].length < minLength) {
+     minLength = arr[i].length
+   }
+ }
+ return maxLength + minLength;
+}
+
+let arr = ['anymore', 'raven', 'me', 'communicate'];
+console.log(sumOfMaxAndMinLengths(arr));
