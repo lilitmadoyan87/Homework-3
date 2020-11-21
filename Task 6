@@ -1,0 +1,19 @@
+// chi stacvel
+
+function splitSentence(sentence) {
+  let arr = [];
+  let str = '';
+  for(let i = 0; i < sentence.length; i++) {
+    if(sentence[i] !== ` ` || sentence[i] !== `,`) {    
+    str += sentence[i] 
+    } else if(sentence[i] === ` ` || sentence[i] === `,`) {
+      return str;
+      break;
+    }
+    arr.push(str);
+  }
+  return arr;
+}
+
+let sentence = `We are the World`;
+console.log(splitSentence(sentence));
